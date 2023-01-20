@@ -4,5 +4,6 @@
 # Datasource local storage ignored files
 /../../../../../../:\Users\dna_m\IdeaProjects\vanessa\.idea/dataSources/
 /dataSources.local.xml
+/vanessa.iml
 # Editor-based HTTP Client requests
 /httpRequests/
