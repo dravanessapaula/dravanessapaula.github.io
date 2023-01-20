@@ -1,0 +1,407 @@
+html, body {
+    font-family: 'Open Sans', sans-serif;
+    color: #333333;
+    font-size: 18px;
+    display: block;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    background-color: #fff;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+a,
+a:hover,
+a:visited {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+h1, h2, h3 {
+    color: #34478C;
+    font-family: 'Lato', sans-serif;
+}
+
+.head-block {
+@url: url('../imagens/joycar-home/head-background.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: bottom;
+    width: 1279px;
+    margin: 0 auto;
+}
+
+.header {
+    position: fixed;
+    background-color: #fff;
+    border-bottom: 1px solid #A0ADDB;
+    height: 100px;
+    width: 100%;
+    z-index: 100;
+    top: 0;
+}
+
+.header .container {
+    width: 1279px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .container .logo img {
+    width: 300px;
+}
+
+.header .container .content a {
+    padding: 0 10px;
+    color: #4d007e;
+    border-bottom: 3px solid transparent;
+}
+
+.header .container .content a:hover {
+    font-weight: bold;
+    border-color: #4d007e;
+}
+
+.head-block .image-block {
+    position: relative;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.head-block .image-block .photo img {
+    border-radius: 10px;
+}
+
+.head-block .image-block .text {
+    position: absolute;
+    width: 300px;
+    text-align: left;
+    left: 150px;
+    top: 95px;
+}
+
+.head-block .image-block .text h1 {
+    font-size: 33px;
+}
+
+.resume {
+    padding: 20px 0;
+    border-bottom: 1px solid #A0ADDB;
+    border-top: 1px solid #A0ADDB;
+    background-color: #D0D7F1;
+}
+
+.resume .container {
+    width: 1279px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-align: left;
+}
+
+.resume .container .item {
+    display: flex;
+    align-items: center;
+    width: 320px;
+}
+
+.resume .container .item img {
+    width: 50px;
+}
+
+.resume .container .item span {
+    padding-left: 30px;
+}
+
+.body-block {
+    width: 1279px;
+    margin: 0 auto;
+}
+
+.body-block .our-services {
+    margin-top: 40px;
+}
+
+.body-block .our-services .line {
+    display: flex;
+    text-align: center;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 40px 0;
+}
+
+.body-block .our-services .line h2 {
+    margin: 0 auto;
+
+}
+
+.body-block .our-services .line .column {
+    width: 350px;
+    height: 300px;
+    border: 1px solid lightblue;
+    border-radius: 10px;
+    padding: 30px;
+    -webkit-transition: all ease .5s;
+    -moz-transition: all ease .5s;
+    -ms-transition: all ease .5s;
+    -o-transition: all ease .5s;
+}
+
+.body-block .our-services .line .column:hover {
+    background: linear-gradient(to bottom, #A0ADDB 0%, lightblue 100%);
+    -webkit-transition: all ease .5s;
+    -moz-transition: all ease .5s;
+    -ms-transition: all ease .5s;
+    -o-transition: all ease .5s;
+}
+
+.body-block .our-services .line .column .icon img {
+    width: 150px;
+}
+
+.body-block .our-services .line .column .description {
+
+}
+
+.body-block .team {
+    text-align: center;
+    margin: 65px 0 125px;
+}
+
+.body-block .team h2 {
+    margin: 0 auto 50px;
+}
+
+.body-block .team .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.body-block .team .container .photo img {
+    width: 350px;
+    border-radius: 750px;
+}
+
+.body-block .team .content {
+    padding-left: 50px;
+    text-align: left;
+}
+
+.body-block .team .content a {
+    color: #333333;
+}
+
+.body-block .team .content .name {
+    font-weight: bold;
+    color: #7383bf;
+    padding-bottom: 20px;
+    font-size: 22px;
+}
+
+.body-block .team .content .description {
+
+}
+
+.footer-block {
+    background-color: #34478C;
+    padding: 30px 0;
+    color: #D0D7F1;
+    font-size: 15px;
+}
+
+.footer-block .container {
+    width: 1279px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.footer-block .container .column {
+    width: 290px;
+}
+
+.footer-block .logo {
+    margin: 0 auto;
+    width: 300px;
+    padding-bottom: 30px;
+}
+
+.footer-block .logo img {
+    width: 300px;
+    filter: brightness(0) invert(1);
+}
+
+.footer-block .container .column h3 {
+    color: #D0D7F1;
+    margin: 5px 0;
+}
+
+.footer-block .container .column .contact div {
+    padding: 10px 0;
+}
+
+.footer-block .container .column .social-medias img {
+    padding-right: 10px;
+}
+
+.footer-block .container .column .social-medias a {
+    color: #D0D7F1;
+    display: flex;
+    align-items: center;
+}
+
+.footer-block .container .column .our-services div {
+    padding: 10px 0;
+}
+
+.footer-block .container .column .schedule div {
+    padding: 10px 0;
+}
+
+@media (max-width: 1279px) {
+    .header .container {
+        width: 620px;
+    }
+
+    .resume .container {
+        width: 620px;
+        font-size: 16px;
+    }
+
+    .resume .container .item {
+        width: 200px;
+    }
+
+    .resume .container .item span {
+        padding-left: 10px;
+    }
+
+    .head-block {
+        width: 620px;
+    }
+
+    .head-block .image-block .text {
+        width: 200px;
+        left: 30px;
+        top: 15px;
+    }
+
+    .head-block .image-block .text h1 {
+        font-size: 25px;
+    }
+
+    .head-block .image-block .photo img {
+        width: 100%;
+    }
+
+    .body-block {
+        width: 620px;
+    }
+
+    .body-block .our-services .line {
+        display: block;
+        width: 100%;
+        padding: 0;
+        margin: 0 auto;
+    }
+
+    .body-block .our-services .line h2 {
+        padding: 40px 0;
+        font-size: 25px;
+    }
+
+    .body-block .our-services .line .column {
+        margin: 0 auto 20px;
+    }
+
+    .footer-block .container {
+        width: 620px;
+    }
+}
+
+
+@media (max-width: 620px) {
+    .header .container {
+        width: 100%;
+        display: inline-block;
+    }
+
+    .header .container .logo {
+        width: 100%;
+        text-align: center;
+    }
+
+    .header .container .logo img {
+        width: 180px;
+    }
+
+    .header .container .content {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .resume .container {
+        width: 250px;
+        display: block;
+    }
+
+    .resume .container .item {
+        margin-bottom: 20px;
+    }
+
+    .resume .container .item:last-child {
+        margin-bottom: 0px;
+    }
+
+    .head-block {
+        width: 290px;
+    }
+
+    .head-block .image-block .text {
+        position: relative;
+        text-align: center;
+        width: 290px;
+        top: 0;
+        left: 0;
+    }
+
+    .body-block {
+        width: 290px;
+    }
+
+    .body-block .our-services .line .column {
+        width: 220px;
+        height: 350px;
+    }
+
+    .body-block .team .container {
+        display: block;
+    }
+
+    .body-block .team .container .photo {
+        margin-bottom: 20px;
+    }
+
+    .body-block .team .container .photo img {
+        width: 250px;
+    }
+
+    .footer-block .container {
+        width: 290px;
+        display: block;
+    }
+
+    .footer-block .container .column {
+        margin-bottom: 20px;
+    }
+}

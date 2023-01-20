@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="css/toothcare-home.css">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="index,follow">
+    <link href="images/healthy-tooth.png" rel="icon">
+    <link href="images/healthy-tooth.png" rel="shortcut icon">
+    <link href="https://fonts.googleapis.com/css?family=Lato|Open+Sans&display=swap" rel="stylesheet">
+    <meta name="description"
+          content="Cirurgiã-dentista com habilidades em dentística, estética, prótese, periodontia e odontopediatria em Capitólio-MG">
+    <title>Vanessa de Paula - Cirurgiã-dentista</title>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-178960943-2"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-178960943-2');
+    </script>
+
+    <script>
+        function animate(elem, style, unit, from, to, time, prop) {
+            if (!elem) {
+                return;
+            }
+            var start = new Date().getTime(),
+                timer = setInterval(function () {
+                    var step = Math.min(1, (new Date().getTime() - start) / time);
+                    if (prop) {
+                        elem[style] = (from + step * (to - from)) + unit;
+                    } else {
+                        elem.style[style] = (from + step * (to - from)) + unit;
+                    }
+                    if (step === 1) {
+                        clearInterval(timer);
+                    }
+                }, 25);
+            if (prop) {
+                elem[style] = from + unit;
+            } else {
+                elem.style[style] = from + unit;
+            }
+        }
+    </script>
+
+    <script>
+        window.onload = function () {
+            var button = document.getElementById('logoHome');
+            button.addEventListener('click', function (event) {
+                var target = document.getElementById("blockHome");
+                animate(document.scrollingElement || document.documentElement, "scrollTop", "", self.pageYOffset, target.offsetTop - 80, 800, true);
+            });
+
+            var button = document.getElementById('home');
+            button.addEventListener('click', function (event) {
+                var target = document.getElementById("blockHome");
+                animate(document.scrollingElement || document.documentElement, "scrollTop", "", self.pageYOffset, target.offsetTop - 80, 800, true);
+            });
+
+            var button = document.getElementById('services');
+            button.addEventListener('click', function (event) {
+                var target = document.getElementById("blockService");
+                animate(document.scrollingElement || document.documentElement, "scrollTop", "", self.pageYOffset, target.offsetTop - 80, 800, true);
+            });
+
+            var button = document.getElementById('dentist');
+            button.addEventListener('click', function (event) {
+                var target = document.getElementById("blockDentist");
+                animate(document.scrollingElement || document.documentElement, "scrollTop", "", self.pageYOffset, target.offsetTop - 100, 800, true);
+            });
+        };
+    </script>
+
+    <div class="header">
+        <div class="container">
+            <div class="logo">
+                <a id="logoHome">
+                    <img src="images/logo-horizontal-brilho.png"/>
+                </a>
+            </div>
+            <div class="content">
+                <a id="home">
+                    Home
+                </a>
+                <a id="services">
+                    Serviços
+                </a>
+                <a id="dentist">
+                    A Dentista
+                </a>
+            </div>
+        </div>
+    </div>
+</head>
+<body>
+<div class="resume" style="margin-top: 100px;" id="blockHome">
+    <div class="container">
+        <div class="item">
+            <img src="images/phone.png">
+            <span>(37) 99862-0670</span>
+        </div>
+        <div class="item">
+            <img src="images/calendar.png">
+            <span>Seg - Sex: 8h - 19h</span>
+        </div>
+        <div class="item">
+            <img src="images/pin.png">
+            <span>Rua João Severino Teixeira, 200 - Capitólio - MG</span>
+        </div>
+    </div>
+</div>
+<div class="head-block">
+    <div class="image-block">
+        <div class="text">
+            <h1>Aqui deixamos seu sorriso mais bonito e saudável</h1>
+        </div>
+        <div class="photo">
+            <img src="images/child-smile.jpg"/>
+        </div>
+    </div>
+</div>
+<div class="body-block">
+    <div class="our-services" id="blockService">
+        <div class="line">
+            <h2>Serviços odontológicos</h2>
+        </div>
+        <div class="line">
+            <div class="column">
+                <div class="icon">
+                    <img src="images/safe-tooth.png"/>
+                </div>
+                <div class="description">
+                    <h3>Periodontia</h3>
+                    Tratamento e prevenção de doenças gengivais e dentárias, além de serviços como raspagem e limpeza.
+                </div>
+            </div>
+            <div class="column">
+                <div class="icon">
+                    <img src="images/dentist-chair.png"/>
+                </div>
+                <div class="description">
+                    <h3>Odontopediatria</h3>
+                    Cuidamos da saúde bucal de crianças de forma eficiente e descontraída. </br> Sem traumas!
+                </div>
+            </div>
+            <div class="column">
+                <div class="icon">
+                    <img src="images/healthy-tooth.png"/>
+                </div>
+                <div class="description">
+                    <h3>Dentística</h3>
+                    Deixamos seu sorriso mais bonito com clareamentos e aplicação de facetas
+                </div>
+            </div>
+        </div>
+        <div class="line">
+            <div class="column">
+                <div class="icon">
+                    <img src="images/crown.png"/>
+                </div>
+                <div class="description">
+                    <h3>Próteses</h3>
+                    Completamos seu sorriso utilizando próteses totais e parciais
+                </div>
+            </div>
+            <div class="column">
+                <div class="icon">
+                    <img src="images/braces.png"/>
+                </div>
+                <div class="description">
+                    <h3>Ortodontia (EM BREVE)</h3>
+                    Em breve estaremos trabalhando com a instalação de aparelhos dentários
+                </div>
+            </div>
+        </div>
+
+        <div class="line">
+            <h2>Serviços estéticos</h2>
+        </div>
+
+        <div class="line">
+            <div class="column">
+                <div class="icon">
+                    <img src="images/lip.png"/>
+                </div>
+                <div class="description">
+                    <h3>Escultura labial</h3>
+                    Deixamos sua boca mais delineada e volumosa através de preenchimentos.
+                    <br/> Afinal, os lábios são a moldura do sorriso!
+                </div>
+            </div>
+            <div class="column">
+                <div class="icon">
+                    <img src="images/beauty.png"/>
+                </div>
+                <div class="description">
+                    <h3>Preenchimentos faciais</h3>
+                    Deixamos seu rosto mais bonito com preenchimentos e aplicação de botox.
+                    </br> Adeus ruguinhas!
+                </div>
+            </div>
+            <div class="column">
+                <div class="icon">
+                    <img src="images/chin.png"/>
+                </div>
+                <div class="description">
+                    <h3>Lipo de papada</h3>
+                    Removemos papada para que o único papo que fique, seja aquele legal que você tem com seus amigos. ;)
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="team" id="blockDentist">
+        <h2>A dentista</h2>
+        <div class="container">
+            <div class="photo">
+                <img src="images/the-dentist.jpg"/>
+            </div>
+            <div class="content">
+                <div class="name">Vanessa de Paula Silva</div>
+                <div class="description">
+                    <div>Cirurgiã-Dentista</div>
+                    <div>Pós-graduanda em Ortodontia</div>
+                    <div>CRO/MG: 53599</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="resume">
+    <div class="container">
+        <div class="item">
+            <img src="images/phone.png">
+            <span>(37) 99862-0670</span>
+        </div>
+        <div class="item">
+            <img src="images/calendar.png">
+            <span>Seg - Sex: 8h - 19h</span>
+        </div>
+        <div class="item">
+            <img src="images/pin.png">
+            <span>Rua João Severino Teixeira, 200 - Capitólio - MG</span>
+        </div>
+    </div>
+</div>
+<div class="footer-block">
+    <div class="logo">
+        <img src="images/logo-horizontal-brilho.png"/>
+    </div>
+    <div class="container">
+        <div class="column">
+            <div class="our-services">
+                <div><h3>Serviços</h3></div>
+                <div>Odontopediatria</div>
+                <div>Periodontia</div>
+                <div>Dentística</div>
+                <div>Prótese</div>
+                <div>Estética</div>
+            </div>
+        </div>
+        <div class="column">
+            <div class="schedule">
+                <div><h3>Atendimento</h3></div>
+                <div>Segunda: 8h às 19h</div>
+                <div>Terça: 8h às 19h</div>
+                <div>Quarta: 8h às 19h</div>
+                <div>Quinta: 8h às 19h</div>
+                <div>Sexta: 8h às 19h</div>
+            </div>
+        </div>
+        <div class="column">
+            <div class="contact">
+                <div><h3>Contato</h3></div>
+                <div>Telefone: (37) 99862-0670</div>
+                <div>E-mail: vanessaa.paula96@gmail.com</div>
+                <div>Endereço: Rua João Severino Teixeira, 200, Nossa Sra Fátima, Capitólio - MG</div>
+            </div>
+            <div class="social-medias">
+                <a href="https://www.instagram.com/dentist.vanessa/" target="_blank"><img
+                        src="images/instagram-white.png"/> @dentist.vanessa</a>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
