@@ -1,3 +1,5 @@
+/*color pallet: https://coolors.co/000000-e6c36b-d3a942-e6e7e8-cc9406*/
+
 html, body {
     font-family: 'Open Sans', sans-serif;
     color: #333333;
@@ -6,7 +8,7 @@ html, body {
     width: 100%;
     margin: 0px;
     padding: 0px;
-    background-color: #fff;
+    background-color: #E6E7E8;
 }
 
 body {
@@ -21,12 +23,11 @@ a:visited {
 }
 
 h1, h2, h3 {
-    color: #34478C;
+    color: #CC9406;
     font-family: 'Lato', sans-serif;
 }
 
 .head-block {
-@url: url('../imagens/joycar-home/head-background.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position-x: center;
@@ -37,9 +38,9 @@ h1, h2, h3 {
 
 .header {
     position: fixed;
-    background-color: #fff;
-    border-bottom: 1px solid #A0ADDB;
-    height: 100px;
+    background-color: #000000;
+    border-bottom: 1px solid #E6C36B;
+    height: 120px;
     width: 100%;
     z-index: 100;
     top: 0;
@@ -51,21 +52,31 @@ h1, h2, h3 {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    vertical-align: center;
 }
 
 .header .container .logo img {
-    width: 300px;
+    width: 200px;
+    padding: 10px 0;
+}
+
+.header .container .content{
+    display: flex;
+    align-items: center;
+    height: 100%;
 }
 
 .header .container .content a {
     padding: 0 10px;
-    color: #4d007e;
-    border-bottom: 3px solid transparent;
+    color: #E6C36B;
+}
+
+.header .container .content a img{
+    width: 50px;
 }
 
 .header .container .content a:hover {
     font-weight: bold;
-    border-color: #4d007e;
 }
 
 .head-block .image-block {
@@ -90,11 +101,15 @@ h1, h2, h3 {
     font-size: 33px;
 }
 
+body {
+    margin-top: 120px;
+}
+
 .resume {
     padding: 20px 0;
-    border-bottom: 1px solid #A0ADDB;
-    border-top: 1px solid #A0ADDB;
-    background-color: #D0D7F1;
+    border-bottom: 1px solid #E6C36B;
+    border-top: 1px solid #E6C36B;
+    background-color: #D3A942;
 }
 
 .resume .container {
@@ -145,7 +160,7 @@ h1, h2, h3 {
 .body-block .our-services .line .column {
     width: 350px;
     height: 300px;
-    border: 1px solid lightblue;
+    border: 1px solid #E6C36B;
     border-radius: 10px;
     padding: 30px;
     -webkit-transition: all ease .5s;
@@ -155,7 +170,7 @@ h1, h2, h3 {
 }
 
 .body-block .our-services .line .column:hover {
-    background: linear-gradient(to bottom, #A0ADDB 0%, lightblue 100%);
+    background: linear-gradient(to bottom, #E6C36B 0%, #E6E7E8 100%);
     -webkit-transition: all ease .5s;
     -moz-transition: all ease .5s;
     -ms-transition: all ease .5s;
@@ -172,7 +187,7 @@ h1, h2, h3 {
 
 .body-block .team {
     text-align: center;
-    margin: 65px 0 125px;
+    margin: 65px 0 65px;
 }
 
 .body-block .team h2 {
@@ -183,16 +198,19 @@ h1, h2, h3 {
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 10px 0;
 }
 
 .body-block .team .container .photo img {
     width: 350px;
+    height: 350px;
     border-radius: 750px;
 }
 
 .body-block .team .content {
     padding-left: 50px;
     text-align: left;
+    width: 400px;
 }
 
 .body-block .team .content a {
@@ -201,75 +219,98 @@ h1, h2, h3 {
 
 .body-block .team .content .name {
     font-weight: bold;
-    color: #7383bf;
+    color: #CC9406;
     padding-bottom: 20px;
     font-size: 22px;
 }
 
-.body-block .team .content .description {
+.body-block .team .container.inverted {
+    display: flex;
+}
 
+.body-block .team .container.regular {
+    display: none;
+}
+
+.body-block .social-medias {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.body-block .social-medias div {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.body-block .social-medias div a img {
+    padding-right: 7px;
+    width: 80px;
+}
+
+.body-block .social-medias div a {
+    color: #D3A942;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    text-decoration: none;
+}
+
+
+.body-block .social-medias div a.wpp {
+    color: #25D366;
+    font-weight: bold;
+    font-size: 23px;
+}
+
+.body-block .social-medias div a:hover {
+    font-weight: bold;
+    text-decoration: underline;
 }
 
 .footer-block {
-    background-color: #34478C;
+    background-color: #000000;
     padding: 30px 0;
-    color: #D0D7F1;
+    color: #E6C36B;
     font-size: 15px;
-}
-
-.footer-block .container {
-    width: 1279px;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-}
-
-.footer-block .container .column {
-    width: 290px;
 }
 
 .footer-block .logo {
     margin: 0 auto;
-    width: 300px;
-    padding-bottom: 30px;
+    text-align: center;
 }
 
 .footer-block .logo img {
-    width: 300px;
-    filter: brightness(0) invert(1);
-}
-
-.footer-block .container .column h3 {
-    color: #D0D7F1;
-    margin: 5px 0;
-}
-
-.footer-block .container .column .contact div {
-    padding: 10px 0;
-}
-
-.footer-block .container .column .social-medias img {
-    padding-right: 10px;
-}
-
-.footer-block .container .column .social-medias a {
-    color: #D0D7F1;
-    display: flex;
-    align-items: center;
-}
-
-.footer-block .container .column .our-services div {
-    padding: 10px 0;
-}
-
-.footer-block .container .column .schedule div {
-    padding: 10px 0;
+    width: 400px;
 }
 
 @media (max-width: 1279px) {
     .header .container {
-        width: 620px;
+        width: 100%;
+        display: inline-block;
+    }
+
+    .header .container .logo {
+        width: 100%;
+        text-align: center;
+    }
+
+    .header .container .logo img {
+        width: 180px;
+    }
+
+    .header .container .content {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        background-color: #000000;
+    }
+
+    body {
+        margin-top: 170px;
     }
 
     .resume .container {
@@ -314,17 +355,21 @@ h1, h2, h3 {
         margin: 0 auto;
     }
 
+    h2 {
+        font-size: 25px;
+    }
+
     .body-block .our-services .line h2 {
         padding: 40px 0;
-        font-size: 25px;
     }
 
     .body-block .our-services .line .column {
         margin: 0 auto 20px;
     }
 
-    .footer-block .container {
-        width: 620px;
+    .body-block .team .container .photo img {
+        width: 250px;
+        height: 250px;
     }
 }
 
@@ -347,7 +392,17 @@ h1, h2, h3 {
     .header .container .content {
         width: 100%;
         display: flex;
-        justify-content: space-around;
+        justify-content: center;
+        background-color: #000000;
+        font-size: 16px;
+    }
+
+    .header .container .content a {
+        padding: 0 5px;
+    }
+
+    body{
+        width: 100%;
     }
 
     .resume .container {
@@ -386,6 +441,15 @@ h1, h2, h3 {
 
     .body-block .team .container {
         display: block;
+        padding-bottom: 50px;
+    }
+
+    .body-block .team .container.inverted {
+        display: none;
+    }
+
+    .body-block .team .container.regular {
+        display: block;
     }
 
     .body-block .team .container .photo {
@@ -394,14 +458,23 @@ h1, h2, h3 {
 
     .body-block .team .container .photo img {
         width: 250px;
+        height: 250px;
     }
 
-    .footer-block .container {
-        width: 290px;
+    .body-block .team .container .content {
+        width: 100%;
+        padding-left: 0;
+    }
+
+    .body-block .social-medias div {
         display: block;
     }
 
-    .footer-block .container .column {
-        margin-bottom: 20px;
+    .body-block .social-medias div a img {
+        width: 60px;
+    }
+
+    .footer-block .logo img {
+        width: 250px;
     }
 }

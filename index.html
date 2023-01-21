@@ -6,8 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="robots" content="index,follow">
-    <link href="src/main/webapp/images/healthy-tooth.png" rel="icon">
-    <link href="src/main/webapp/images/healthy-tooth.png" rel="shortcut icon">
+    <!--    <link href="src/main/webapp/images/icons/golden-tooth.png" rel="icon">-->
+    <!--    <link href="src/main/webapp/images/icons/golden-tooth.png" rel="shortcut icon">-->
+    <link href="src/main/webapp/images/logos/logo-gold-square.png" rel="icon">
+    <link href="src/main/webapp/images/logos/logo-gold-square.png" rel="shortcut icon">
     <link href="https://fonts.googleapis.com/css?family=Lato|Open+Sans&display=swap" rel="stylesheet">
     <meta name="description"
           content="Cirurgiã-dentista com habilidades em dentística, estética, prótese, periodontia e odontopediatria em Capitólio-MG">
@@ -17,7 +19,11 @@
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-178960943-2"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
         gtag('js', new Date());
 
         gtag('config', 'UA-178960943-2');
@@ -59,19 +65,25 @@
             var button = document.getElementById('home');
             button.addEventListener('click', function (event) {
                 var target = document.getElementById("blockHome");
-                animate(document.scrollingElement || document.documentElement, "scrollTop", "", self.pageYOffset, target.offsetTop - 80, 800, true);
+                animate(document.scrollingElement || document.documentElement, "scrollTop", "", self.pageYOffset, target.offsetTop - 100, 800, true);
             });
 
             var button = document.getElementById('services');
             button.addEventListener('click', function (event) {
                 var target = document.getElementById("blockService");
-                animate(document.scrollingElement || document.documentElement, "scrollTop", "", self.pageYOffset, target.offsetTop - 80, 800, true);
+                animate(document.scrollingElement || document.documentElement, "scrollTop", "", self.pageYOffset, target.offsetTop - 100, 800, true);
             });
 
             var button = document.getElementById('dentist');
             button.addEventListener('click', function (event) {
                 var target = document.getElementById("blockDentist");
-                animate(document.scrollingElement || document.documentElement, "scrollTop", "", self.pageYOffset, target.offsetTop - 100, 800, true);
+                animate(document.scrollingElement || document.documentElement, "scrollTop", "", self.pageYOffset, target.offsetTop - 120, 800, true);
+            });
+
+            var button = document.getElementById('social');
+            button.addEventListener('click', function (event) {
+                var target = document.getElementById("blockSocial");
+                animate(document.scrollingElement || document.documentElement, "scrollTop", "", self.pageYOffset, target.offsetTop - 120, 800, true);
             });
         };
     </script>
@@ -80,7 +92,7 @@
         <div class="container">
             <div class="logo">
                 <a id="logoHome">
-                    <img src="src/main/webapp/images/logo-horizontal-brilho.png"/>
+                    <img src="src/main/webapp/images/logos/logo-transparent-cut.png"/>
                 </a>
             </div>
             <div class="content">
@@ -91,25 +103,31 @@
                     Serviços
                 </a>
                 <a id="dentist">
-                    A Dentista
+                    Profissionais
                 </a>
+
+                <a id="social">
+                    Siga-nos
+                </a>
+                <a href="https://wa.me/message/RSHD4FAANLLGG1" target="_blank"><img
+                        src="src/main/webapp/images/icons/wpp.png"/></a>
             </div>
         </div>
     </div>
 </head>
 <body>
-<div class="resume" style="margin-top: 100px;" id="blockHome">
+<div class="resume" id="blockHome">
     <div class="container">
         <div class="item">
-            <img src="src/main/webapp/images/phone.png">
+            <img src="src/main/webapp/images/icons/phone.png">
             <span>(37) 99862-0670</span>
         </div>
         <div class="item">
-            <img src="src/main/webapp/images/calendar.png">
+            <img src="src/main/webapp/images/icons/calendar.png">
             <span>Seg - Sex: 8h - 19h</span>
         </div>
         <div class="item">
-            <img src="src/main/webapp/images/pin.png">
+            <img src="src/main/webapp/images/icons/pin.png">
             <span>Rua João Severino Teixeira, 200 - Capitólio - MG</span>
         </div>
     </div>
@@ -117,22 +135,58 @@
 <div class="head-block">
     <div class="image-block">
         <div class="text">
-            <h1>Aqui deixamos seu sorriso mais bonito e saudável</h1>
+            <h1>Onde a saúde bucal e a estética se unem para um sorriso perfeito.</h1>
         </div>
         <div class="photo">
-            <img src="src/main/webapp/images/child-smile.jpg"/>
+            <img src="src/main/webapp/images/teen-cut.jpg"/>
         </div>
     </div>
 </div>
 <div class="body-block">
     <div class="our-services" id="blockService">
         <div class="line">
+            <h2>Serviços estéticos</h2>
+        </div>
+
+        <div class="line">
+            <div class="column">
+                <div class="icon">
+                    <img src="src/main/webapp/images/icons/lip.png"/>
+                </div>
+                <div class="description">
+                    <h3>Escultura labial</h3>
+                    Deixamos sua boca mais delineada e volumosa através de preenchimentos.
+                    <br/> Afinal, os lábios são a moldura do sorriso!
+                </div>
+            </div>
+            <div class="column">
+                <div class="icon">
+                    <img src="src/main/webapp/images/icons/beauty.png"/>
+                </div>
+                <div class="description">
+                    <h3>Preenchimentos faciais</h3>
+                    Deixamos seu rosto mais bonito com preenchimentos e aplicação de botox.
+                    </br> Adeus ruguinhas!
+                </div>
+            </div>
+            <div class="column">
+                <div class="icon">
+                    <img src="src/main/webapp/images/icons/chin.png"/>
+                </div>
+                <div class="description">
+                    <h3>Lipo de papada</h3>
+                    Removemos papada para que o único papo que fique, seja aquele legal que você tem com seus amigos. ;)
+                </div>
+            </div>
+        </div>
+
+        <div class="line">
             <h2>Serviços odontológicos</h2>
         </div>
         <div class="line">
             <div class="column">
                 <div class="icon">
-                    <img src="src/main/webapp/images/safe-tooth.png"/>
+                    <img src="src/main/webapp/images/icons/safe-tooth.png"/>
                 </div>
                 <div class="description">
                     <h3>Periodontia</h3>
@@ -141,7 +195,7 @@
             </div>
             <div class="column">
                 <div class="icon">
-                    <img src="src/main/webapp/images/dentist-chair.png"/>
+                    <img src="src/main/webapp/images/icons/dentist-chair.png"/>
                 </div>
                 <div class="description">
                     <h3>Odontopediatria</h3>
@@ -150,7 +204,7 @@
             </div>
             <div class="column">
                 <div class="icon">
-                    <img src="src/main/webapp/images/healthy-tooth.png"/>
+                    <img src="src/main/webapp/images/icons/healthy-tooth.png"/>
                 </div>
                 <div class="description">
                     <h3>Dentística</h3>
@@ -161,7 +215,7 @@
         <div class="line">
             <div class="column">
                 <div class="icon">
-                    <img src="src/main/webapp/images/crown.png"/>
+                    <img src="src/main/webapp/images/icons/crown.png"/>
                 </div>
                 <div class="description">
                     <h3>Próteses</h3>
@@ -170,123 +224,119 @@
             </div>
             <div class="column">
                 <div class="icon">
-                    <img src="src/main/webapp/images/braces.png"/>
+                    <img src="src/main/webapp/images/icons/braces.png"/>
                 </div>
                 <div class="description">
-                    <h3>Ortodontia (EM BREVE)</h3>
-                    Em breve estaremos trabalhando com a instalação de aparelhos dentários
-                </div>
-            </div>
-        </div>
-
-        <div class="line">
-            <h2>Serviços estéticos</h2>
-        </div>
-
-        <div class="line">
-            <div class="column">
-                <div class="icon">
-                    <img src="src/main/webapp/images/lip.png"/>
-                </div>
-                <div class="description">
-                    <h3>Escultura labial</h3>
-                    Deixamos sua boca mais delineada e volumosa através de preenchimentos.
-                    <br/> Afinal, os lábios são a moldura do sorriso!
-                </div>
-            </div>
-            <div class="column">
-                <div class="icon">
-                    <img src="src/main/webapp/images/beauty.png"/>
-                </div>
-                <div class="description">
-                    <h3>Preenchimentos faciais</h3>
-                    Deixamos seu rosto mais bonito com preenchimentos e aplicação de botox.
-                    </br> Adeus ruguinhas!
-                </div>
-            </div>
-            <div class="column">
-                <div class="icon">
-                    <img src="src/main/webapp/images/chin.png"/>
-                </div>
-                <div class="description">
-                    <h3>Lipo de papada</h3>
-                    Removemos papada para que o único papo que fique, seja aquele legal que você tem com seus amigos. ;)
+                    <h3>Ortodontia </h3>
+                    Instalação de aparelhos dentários
                 </div>
             </div>
         </div>
     </div>
 
     <div class="team" id="blockDentist">
-        <h2>A dentista</h2>
+        <h2>Profissionais</h2>
         <div class="container">
             <div class="photo">
-                <img src="src/main/webapp/images/the-dentist.jpg"/>
+                <img src="src/main/webapp/images/professionals/vanessa-square.jpeg"/>
             </div>
             <div class="content">
-                <div class="name">Vanessa de Paula Silva</div>
+                <div class="name">Dra. Vanessa de Paula Silva</div>
                 <div class="description">
                     <div>Cirurgiã-Dentista</div>
-                    <div>Pós-graduanda em Ortodontia</div>
+                    <div>Especialista em Ortodontia</div>
+                    <div>Pós-graduanda em HOF</div>
+                    <div>Extensão em Odontopediatria</div>
+                    <div>Extensão em Estética em Prótese Fixa</div>
                     <div>CRO/MG: 53599</div>
                 </div>
             </div>
         </div>
+
+        <div class="container inverted">
+            <div class="content">
+                <div class="name">Dr. Carlos Henrique</div>
+                <div class="description">
+                    <div>Especialista em Cirurgia Bucomaxilo-Facial</div>
+                    <div>Especialista em Implantodontia</div>
+                    <div>Professor de Pós Graduação em HOF</div>
+                    <div>CRO/MG: 35103</div>
+                </div>
+            </div>
+
+            <div class="photo">
+                <img src="src/main/webapp/images/professionals/carlos-square.jpeg"/>
+            </div>
+        </div>
+
+        <div class="container regular">
+            <div class="photo">
+                <img src="src/main/webapp/images/professionals/carlos-square.jpeg"/>
+            </div>
+
+            <div class="content">
+                <div class="name">Dr. Carlos Henrique</div>
+                <div class="description">
+                    <div>Especialista em Cirurgia Bucomaxilo-Facial</div>
+                    <div>Especialista em Implantodontia</div>
+                    <div>Professor de Pós Graduação em HOF</div>
+                    <div>CRO/MG: 35103</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="photo">
+                <img src="src/main/webapp/images/professionals/bia-face.jpeg"/>
+            </div>
+            <div class="content">
+                <div class="name">Dra. Beatriz Hostalácio</div>
+                <div class="description">
+                    <div>Cirurgiã-Dentista</div>
+                    <div>Especialista em Endodontia</div>
+                    <div>CRO/MG: 55724</div>
+                </div>
+            </div>
+        </div>
     </div>
+
+    <div class="social-medias" id="blockSocial">
+        <h2>Agende já sua consulta!</h2>
+        <div>
+            <a href="https://wa.me/message/RSHD4FAANLLGG1" target="_blank" class="wpp"><img
+                    src="src/main/webapp/images/icons/wpp.png"/> Ir para o WhatsApp</a>
+        </div>
+
+        <h2>Estamos também no Instagram! Siga-nos para ficar por dentro de todas as atualizações</h2>
+        <div>
+            <a href="https://instagram.com/dra.vanessahof" target="_blank"><img
+                    src="src/main/webapp/images/icons/insta-golden.png"/> @dra.vanessahof</a>
+            <a href="https://www.instagram.com/consultoriovanessa/" target="_blank"><img
+                    src="src/main/webapp/images/icons/insta-golden.png"/> @consultoriovanessa</a>
+        </div>
+    </div>
+
 </div>
 
 <div class="resume">
     <div class="container">
         <div class="item">
-            <img src="src/main/webapp/images/phone.png">
-            <span>(37) 99862-0670</span>
+            <img src="src/main/webapp/images/icons/phone.png">
+            <span>(37) 99862-0670 vanessaa.paula96@gmail.com</span>
         </div>
         <div class="item">
-            <img src="src/main/webapp/images/calendar.png">
+            <img src="src/main/webapp/images/icons/calendar.png">
             <span>Seg - Sex: 8h - 19h</span>
         </div>
         <div class="item">
-            <img src="src/main/webapp/images/pin.png">
+            <img src="src/main/webapp/images/icons/pin.png">
             <span>Rua João Severino Teixeira, 200 - Capitólio - MG</span>
         </div>
     </div>
 </div>
 <div class="footer-block">
     <div class="logo">
-        <img src="src/main/webapp/images/logo-horizontal-brilho.png"/>
-    </div>
-    <div class="container">
-        <div class="column">
-            <div class="our-services">
-                <div><h3>Serviços</h3></div>
-                <div>Odontopediatria</div>
-                <div>Periodontia</div>
-                <div>Dentística</div>
-                <div>Prótese</div>
-                <div>Estética</div>
-            </div>
-        </div>
-        <div class="column">
-            <div class="schedule">
-                <div><h3>Atendimento</h3></div>
-                <div>Segunda: 8h às 19h</div>
-                <div>Terça: 8h às 19h</div>
-                <div>Quarta: 8h às 19h</div>
-                <div>Quinta: 8h às 19h</div>
-                <div>Sexta: 8h às 19h</div>
-            </div>
-        </div>
-        <div class="column">
-            <div class="contact">
-                <div><h3>Contato</h3></div>
-                <div>Telefone: (37) 99862-0670</div>
-                <div>E-mail: vanessaa.paula96@gmail.com</div>
-                <div>Endereço: Rua João Severino Teixeira, 200, Nossa Sra Fátima, Capitólio - MG</div>
-            </div>
-            <div class="social-medias">
-                <a href="https://www.instagram.com/dentist.vanessa/" target="_blank"><img
-                        src="src/main/webapp/images/instagram-white.png"/> @dentist.vanessa</a>
-            </div>
-        </div>
+        <img src="src/main/webapp/images/logos/logo-transparent.png"/>
     </div>
 </div>
 </body>
