@@ -59,12 +59,6 @@
             var button = document.getElementById('logoHome');
             button.addEventListener('click', function (event) {
                 var target = document.getElementById("blockHome");
-                animate(document.scrollingElement || document.documentElement, "scrollTop", "", self.pageYOffset, target.offsetTop - 80, 800, true);
-            });
-
-            var button = document.getElementById('home');
-            button.addEventListener('click', function (event) {
-                var target = document.getElementById("blockHome");
                 animate(document.scrollingElement || document.documentElement, "scrollTop", "", self.pageYOffset, target.offsetTop - 100, 800, true);
             });
 
@@ -96,11 +90,8 @@
                 </a>
             </div>
             <div class="content">
-                <a id="home">
-                    Home
-                </a>
                 <a id="services">
-                    Serviços
+                    Procedimentos
                 </a>
                 <a id="dentist">
                     Profissionais
@@ -145,90 +136,265 @@
 <div class="body-block">
     <div class="our-services" id="blockService">
         <div class="line">
-            <h2>Serviços estéticos</h2>
+            <h2>Procedimentos estéticos</h2>
         </div>
 
         <div class="line">
-            <div class="column">
-                <div class="icon">
-                    <img src="src/main/webapp/images/icons/lip.png"/>
-                </div>
-                <div class="description">
-                    <h3>Escultura labial</h3>
-                    Deixamos sua boca mais delineada e volumosa através de preenchimentos.
-                    <br/> Afinal, os lábios são a moldura do sorriso!
-                </div>
-            </div>
-            <div class="column">
-                <div class="icon">
+            <div class="card">
+                <div class="icon front">
                     <img src="src/main/webapp/images/icons/beauty.png"/>
                 </div>
-                <div class="description">
-                    <h3>Preenchimentos faciais</h3>
-                    Deixamos seu rosto mais bonito com preenchimentos e aplicação de botox.
-                    </br> Adeus ruguinhas!
+                <div class="description front">
+                    <h3>Toxina botulínica</h3>
+                    Dê adeus para as rugas com os preenchimentos com o Botox!
+                    Conheça também os benefícios funcionais da toxina botulínica.
+                </div>
+                <div class="description back">
+                    O preenchimento com Toxina botulínica é uma das melhores e menos invasivas soluções amenizar rugas
+                    faciais. É ótimo para os "pés de galinha", linhas da testa e bigode chinês.<br/>
+                    Descubra também o Botox preventivo, para que você "congele no tempo" e as rugas sequer
+                    apareçam.<br/> <br/>
+                    Ainda há os usos terapêuticos, como para o tratamento de rangimento de dentes (ou bruxismo).
                 </div>
             </div>
-            <div class="column">
-                <div class="icon">
+
+            <div class="card">
+                <div class="icon front">
+                    <img src="src/main/webapp/images/icons/lip.png"/>
+                </div>
+                <div class="description front">
+                    <h3>Preenchimento do rosto</h3>
+                    Esconda suas marquinhas de expressão, realce os contornos do rosto e alcançe aquela boca dos sonhos!
+                </div>
+                <div class="description back">
+                    O preenchimento com ácido hialurônico é utilizado para tratar diversas queixas, desde dar volume,
+                    melhorar contornos e reestruturar a face.<br/>
+                    É muito utilizado para corrigir assimetrias deixando o seu rosto mais harmônico.<br/>
+                    O preenchimento pode ser realizado nas regiões de: mandíbula, lábios, bigode chinês, olheiras e
+                    muito mais.
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="icon front">
+                    <img src="src/main/webapp/images/icons/collagen.png"/>
+                </div>
+                <div class="description front">
+                    <h3>Bioestimuladores de colágeno</h3>
+                    Congele o tempo mantendo o colágeno sempre por perto, para uma pele linda e firme.
+                </div>
+                <div class="description back">
+                    Conforme o próprio nome sugere, bioestimuladores são ativos biocompatíveis com o organismo humano
+                    (bio).<br/>
+                    Quando aplicados na pele, eles estimulam (estimuladores) a produção de colágeno, proteína
+                    responsável pela sustentação e firmeza da pele.
+                </div>
+            </div>
+        </div>
+
+        <div class="line">
+            <div class="card">
+                <div class="icon front">
+                    <img src="src/main/webapp/images/icons/facial-treatment.png"/>
+                </div>
+                <div class="description front">
+                    <h3>Peeling</h3>
+                    Para uma renovação da pele e diminuição de manchas.
+                </div>
+                <div class="description back">
+                    O peeling químico é um tipo de tratamento estético que é feito com a aplicação de ácidos sobre a
+                    pele para
+                    retirar as camadas danificadas e promover o crescimento de uma camada lisa,
+                    podendo ser feito para eliminar manchas e linhas de expressão, por exemplo.
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="icon front">
+                    <img src="src/main/webapp/images/icons/beauty-treatment.png"/>
+                </div>
+                <div class="description front">
+                    <h3>SkinBooster </h3>
+                    Aquela "turbinada", para trazer uma pele mais hidratada e viçosa!
+                </div>
+                <div class="description back">
+                    Skinbooster é um procedimento estético simples que, por meio do ácido hialurônico, hidrata
+                    profundamente
+                    a pele, gerando resultados superiores a qualquer dermocosmético por atuar nas camadas mais profundas
+                    da pele
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="icon front">
+                    <img src="src/main/webapp/images/icons/acupuncture.png"/>
+                </div>
+                <div class="description front">
+                    <h3>Microagulhamento </h3>
+                    Bora tratar aquelas marquinhas e de quebra melhorar a firmeza do rosto com o Microagulhamento?
+                </div>
+                <div class="description back">
+                    O microagulhamento é um procedimento feito com um equipamento cheio de pequenas agulhas que promovem
+                    microlesões na pele.<br/>
+                    Dessa maneira, ele estimula a produção de colágeno e de elastina, substâncias que dão sustentação e
+                    firmeza à pele.
+                </div>
+            </div>
+        </div>
+
+        <div class="line">
+            <div class="card">
+                <div class="icon front">
+                    <img src="src/main/webapp/images/icons/forehead.png"/>
+                </div>
+                <div class="description front">
+                    <h3>Fios PDO</h3>
+                    Bora dar aquele "up" no rosto?! <br/>
+                    Com os Fios PDO você consegue a tão sonhada pele firminha.
+                </div>
+                <div class="description back">
+                    Os fios de PDO são fios absorvíveis pelo organismo e que estimulam o corpo a produzir colágeno.<br/>
+                    Ou seja, com o passar dos tempos eles naturalmente são absorvidos pelo corpo humano e promovem uma
+                    melhora da qualidade e firmeza da pele.
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="icon front">
                     <img src="src/main/webapp/images/icons/chin.png"/>
                 </div>
-                <div class="description">
+                <div class="description front">
                     <h3>Lipo de papada</h3>
                     Removemos papada para que o único papo que fique, seja aquele legal que você tem com seus amigos. ;)
                 </div>
+                <div class="description back">
+                    A lipo de papada enzimática é um procedimento sem corte ou sensação dolorosa para o paciente.
+                    Consiste na aplicação de microinjeções na região da papada, as quais ajudam a reduzir o volume
+                    gorduroso da região.
+                    <br/>
+                    A lipo de papada aspirativa é um procedimento que consiste na aspiração da gordura localizada no
+                    pescoço, sob o queixo e na mandíbula.
+                    O tratamento é realizado com anestesia local e sedação, já que se trata de uma cirurgia.
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="icon front">
+                    <img src="src/main/webapp/images/icons/cheek.png"/>
+                </div>
+                <div class="description front">
+                    <h3>Bichectomia </h3>
+                    Procura um rosto mais fino? Diminua suas bochechas com uma bichectomia!
+                </div>
+                <div class="description back">
+                    A bichectomia é um procedimento cirúrgico estético-funcional, cujo principal objetivo é reduzir o
+                    tamanho das bochechas. <br/>
+                    Para isso, retira-se as bolas de <i>Bichat</i>, que são um tecido gorduroso, localizado abaixo das
+                    maçãs do rosto.
+                </div>
             </div>
         </div>
 
         <div class="line">
-            <h2>Serviços odontológicos</h2>
+            <h2>Tratamentos odontológicos</h2>
         </div>
         <div class="line">
-            <div class="column">
-                <div class="icon">
+            <div class="card">
+                <div class="icon front">
+                    <img src="src/main/webapp/images/icons/braces.png"/>
+                </div>
+                <div class="description front">
+                    <h3>Ortodontia</h3>
+                    Instalação de aparelhos dentários para alcançar o sorriso perfeito!
+                </div>
+                <div class="description back">
+                    Especialidade odontológica que corrige a posição dos dentes e dos ossos maxilares posicionados de forma inadequada.  <br/><br/>
+                    Dentes tortos ou dentes que não se encaixam corretamente são difíceis de serem mantidos limpos, podendo ser perdidos precocemente, devido à deterioração e à doença periodontal.
+                </div>
+            </div>
+            <div class="card">
+                <div class="icon front">
                     <img src="src/main/webapp/images/icons/safe-tooth.png"/>
                 </div>
-                <div class="description">
+                <div class="description front">
                     <h3>Periodontia</h3>
                     Tratamento e prevenção de doenças gengivais e dentárias, além de serviços como raspagem e limpeza.
                 </div>
-            </div>
-            <div class="column">
-                <div class="icon">
-                    <img src="src/main/webapp/images/icons/dentist-chair.png"/>
-                </div>
-                <div class="description">
-                    <h3>Odontopediatria</h3>
-                    Cuidamos da saúde bucal de crianças de forma eficiente e descontraída. </br> Sem traumas!
+                <div class="description back">
+                    Ramo da odontologia que se especializa no estudo dos tecidos normais e no tratamento das afecções dos tecidos imediatamente próximos aos dentes.
                 </div>
             </div>
-            <div class="column">
-                <div class="icon">
+            <div class="card">
+                <div class="icon front">
                     <img src="src/main/webapp/images/icons/healthy-tooth.png"/>
                 </div>
-                <div class="description">
+                <div class="description front">
                     <h3>Dentística</h3>
-                    Deixamos seu sorriso mais bonito com clareamentos e aplicação de facetas
+                    Deixamos seu sorriso mais bonito com clareamentos e aplicação de facetas.
+                </div>
+                <div class="description back">
+                    Dentística ou odontologia estética é o ramo da odontologia que atua na área da cosmética e restauração dental. <br/><br/>
+                    Entre outros serviços, os profissionais desta especialidade tratam de clareamentos dos dentes, uso de resinas diretas, facetas, lentes de contato dental, e restaurações estéticas.
                 </div>
             </div>
         </div>
         <div class="line">
-            <div class="column">
-                <div class="icon">
-                    <img src="src/main/webapp/images/icons/crown.png"/>
+            <div class="card">
+                <div class="icon front">
+                    <img src="src/main/webapp/images/icons/dentist-chair.png"/>
                 </div>
-                <div class="description">
-                    <h3>Próteses</h3>
-                    Completamos seu sorriso utilizando próteses totais e parciais
+                <div class="description front">
+                    <h3>Odontopediatria</h3>
+                    Cuidamos da saúde bucal de crianças de forma eficiente e descontraída.</br>Sem traumas!
+                </div>
+                <div class="description back">
+                    Especialidade da Odontologia que cuida da saúde bucal das crianças e pela qual elas têm o primeiro contato com o dentista. <br/>
+                    Quanto mais cedo ocorrer esse contato, mais positiva será sua imagem, facilitando o estabelecimento das práticas odontológicas, sem criar fobias na criança. <br/>
+                    Além de ter conhecimento sobre as várias etapas do crescimento e desenvolvimento da criança.
                 </div>
             </div>
-            <div class="column">
-                <div class="icon">
-                    <img src="src/main/webapp/images/icons/braces.png"/>
+            <div class="card">
+                <div class="icon front">
+                    <img src="src/main/webapp/images/icons/crown.png"/>
                 </div>
-                <div class="description">
-                    <h3>Ortodontia </h3>
-                    Instalação de aparelhos dentários
+                <div class="description front">
+                    <h3>Próteses</h3>
+                    Completamos seu sorriso utilizando próteses totais e parciais.
+                </div>
+                <div class="description back">
+                    Visa substituir um ou mais dentes faltantes na boca do paciente. <br/><br/>
+                    Assim, além de devolver o sorriso, a autoestima e melhorar a estética, ela também contribui para a saúde, já que devolve as funções bucais, melhorando a mastigação, a fonética e, até mesmo, a respiração.
+                </div>
+            </div>
+            <div class="card">
+                <div class="icon front">
+                    <img src="src/main/webapp/images/icons/dental-surgery-clr.png"/>
+                </div>
+                <div class="description front">
+                    <h3>Cirurgia bucomaxilar </h3>
+                    Soluções para desde a extração daquele siso complicado, até correções maxilares.
+                </div>
+                <div class="description back">
+                    O cirurgião bucomaxilofacial, ou bucomaxilo, cuida de diversas patologias e condições relacionadas à região da face como: <br/>
+                    Traumatismos ou deformidades na face e nos maxilares;<br/>
+                    Manifestações de outras doenças na cavidade bucal; <br/>Tumores e cistos nos maxilares;<br/>
+                    Alterações do desenvolvimento ósseo da face; <br/>Fraturas faciais.
+                </div>
+            </div>
+        </div>
+
+        <div class="line">
+            <div class="card">
+                <div class="icon front">
+                    <img src="src/main/webapp/images/icons/root-canal.png"/>
+                </div>
+                <div class="description front">
+                    <h3>Endodontia </h3>
+                    Acabe com a dor de dente com tratamentos de canal.
+                </div>
+                <div class="description back"> Endodontia ou tratamento de canal é a remoção da polpa do dente, um pequeno tecido semelhante a um fio que fica no interior do dente. <br/>
+                    Depois que a polpa danificada, infeccionada ou morta é removida, o espaço restante é limpo, modelado e preenchido. <br/>
+                    Antigamente, os dentes com polpa infeccionada ou afetada eram extraídos, já hoje, o tratamento de canal salva muitos dentes que, normalmente, seriam perdidos.
                 </div>
             </div>
         </div>
@@ -301,10 +467,10 @@
     </div>
 
     <div class="social-medias" id="blockSocial">
-        <h2>Agende já sua consulta!</h2>
+        <h2>Agende já a sua consulta!</h2>
         <div>
             <a href="https://wa.me/message/RSHD4FAANLLGG1" target="_blank" class="wpp"><img
-                    src="src/main/webapp/images/icons/wpp.png"/> Ir para o WhatsApp</a>
+                    src="src/main/webapp/images/icons/wpp.png"/> Ir para o WhatsApp </a>
         </div>
 
         <h2>Estamos também no Instagram! Siga-nos para ficar por dentro de todas as atualizações</h2>
