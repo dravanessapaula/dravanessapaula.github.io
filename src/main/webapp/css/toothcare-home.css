@@ -1,19 +1,11 @@
-/*color pallet: https://coolors.co/000000-e6c36b-d3a942-e6e7e8-cc9406*/
-
-/*
-useful links:
-https://docs.github.com/pt/pages/configuring-a-custom-domain-for-your-github-pages-site
-https://dravanessapaula.github.io/
-*/
-
 html, body {
     font-family: 'Open Sans', sans-serif;
     color: #333333;
     font-size: 18px;
     display: block;
     width: 100%;
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
     background-color: #E6E7E8;
 }
 
@@ -181,7 +173,7 @@ body {
     -ms-transition: all ease .5s;
     -o-transition: all ease .5s;
 }
-colorpicker
+
 .body-block .our-services .line .card .front {
     display: block;
 }
@@ -441,7 +433,7 @@ colorpicker
     }
 
     .resume .container .item:last-child {
-        margin-bottom: 0px;
+        margin-bottom: 0;
     }
 
     .head-block {
